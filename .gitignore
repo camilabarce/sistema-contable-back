@@ -1,0 +1,35 @@
+#Ignoramos el archivo .env que contiene credenciales importantes de nuestro proyecto, como el ingreso a DB.
+/.env
+
+#node_modules
+/node_modules
+
+# Carpetas
+/temp/
+/tmp/
+
+/logs/
+/docs/
+
+/bundle/
+/build/
+/dist/
+
+/.angular/
+/node_modules/
+/.vscode/
+
+# Archivos
+*.swp
+*.temp
+*.tmp
+
+*.log*
+*.txt
+*.inf
+
+*.exe
+*.bat
+*.sh
+
+*.env
