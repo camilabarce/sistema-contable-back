@@ -11,7 +11,7 @@ const options = {
     definition: {
         openapi: "3.0.0",
         info: { title: 'Sistema Contable API', 
-        description:"<a href='http://localhost:3000/' target='_self'>Volver al menú principal</a>", 
+        description:"<a href='https://sistema-contable.up.railway.app/' target='_self'>Volver al menú principal</a>", 
         version: '1.0.0'},
     },
     apis: ['src/Documentation/documentacion.js']
@@ -23,7 +23,7 @@ const swaggerSpec = swaggerJSDoc(options);
 //Configuramos una ruta para mostrar la documentación de nuestra API usando el controlador de Swagger
 const swaggerDocs = (app, port) =>{
     app.use('/api', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
-    console.log(`Documentación de la API disponible en  http://localhost:${port}/api`)
+    console.log(`Documentación de la API disponible en  https://sistema-contable.up.railway.app/api`)
 };
 
 module.exports = { swaggerDocs };
